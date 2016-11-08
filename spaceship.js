@@ -7,6 +7,7 @@ class Spaceship {
     this.cloaked = false;
     this.warpDrive = 'disengaged';
     this.phasersCharge = 'uncharged';
+    this.docked = true
     Store.data.spaceships.push(this)
   }
   crewMembers() {
@@ -14,15 +15,8 @@ class Spaceship {
       return member.ship_id === this.id;
     })
   }
-  // docked() {
-  //   if (Store.data.crewMembers.filter(member) => {
-  //     return member.ship_id === this.id;
-  //   }.length === 0;) {
-  //     return true;
-  //   } else {
-  //     return false;
-  //   }
-  // }
+
+
 
 
 }

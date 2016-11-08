@@ -127,7 +127,7 @@ describe('space invaders', () => {
     })
 
     it('should assign a crew member', function() {
-      expect(tristan.spaceshipId).toBe(2)
+      expect(tristan.ship_id).toBe(2)
     })
 
     it('a crew member should know his or her ship', function() {
@@ -135,7 +135,6 @@ describe('space invaders', () => {
     })
 
     it('should charge its phasers when a gunner calls `chargePhasers`', function() {
-      // console.log(tristian.currentShip)
       tristan.chargePhasers()
       expect(spaceship.phasersCharge).toBe('uncharged')
       katie.chargePhasers()
